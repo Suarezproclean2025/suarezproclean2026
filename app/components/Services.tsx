@@ -27,7 +27,7 @@ const services = [
     description: 'Move-in and move-out cleaning services across Orange County, deep cleans for tenant turnover, property managers, and landlords.',
   },
   {
-    image: '/images/SuarezCS_Janitor.png',
+    image: '/images/SuarezCS_Janito.png',
     title: 'Day Porter',
     description: 'Day porter services in Orange County on-site attendants to maintain restrooms, lobbies, and high-traffic areas throughout the day.',
   },
