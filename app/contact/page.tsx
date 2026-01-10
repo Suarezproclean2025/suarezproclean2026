@@ -111,7 +111,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none"
                   />
                 </div>
 
@@ -203,7 +203,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full bg-emerald-500 text-white px-8 py-4 rounded-lg hover:bg-emerald-600 transition-colors font-medium text-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
+                className="w-full bg-cyan-500 text-white px-8 py-4 rounded-lg hover:bg-cyan-600 transition-colors font-medium text-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
                 {status === 'loading' ? 'Sending...' : 'Request Quote'}
               </button>
@@ -215,7 +215,7 @@ export default function Contact() {
                 Call us at{' '}
                 <a
                   href="tel:+19493579256"
-                  className="text-emerald-500 hover:text-emerald-600 font-medium"
+                  className="text-cyan-500 hover:text-cyan-600 font-medium"
                 >
                   (949) 357-9256
                 </a>
