@@ -21,7 +21,7 @@ export default function Footer() {
 
 <a
   href="tel:+19493579256"
-  className="text-emerald-400 hover:text-emerald-300 transition-colors"
+  className="text-cyan-400 hover:text-cyan-300 transition-colors"
 >
   (949) 357-9256
 </a>
@@ -33,25 +33,25 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <Link
                 href="/contact"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 Get a Quote
               </Link>
               <Link
                 href="#services"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 Services
               </Link>
               <Link
                 href="#why-us"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 Why Us
               </Link>
               <Link
                 href="#areas"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 Areas
               </Link>

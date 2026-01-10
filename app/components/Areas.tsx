@@ -23,7 +23,7 @@ export default function Areas() {
       className="py-16 md:py-24 bg-white relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -z-0"></div>
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -z-0"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex items-center justify-center gap-6 md:gap-8 mb-6">
@@ -52,7 +52,7 @@ export default function Areas() {
           {cities.map((city, index) => (
             <span
               key={index}
-              className="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full font-medium hover:bg-emerald-500 hover:text-white hover:scale-110 transition-all duration-300 cursor-default shadow-sm hover:shadow-md"
+              className="bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full font-medium hover:bg-cyan-500 hover:text-white hover:scale-110 transition-all duration-300 cursor-default shadow-sm hover:shadow-md"
               style={{
                 animationDelay: `${index * 0.05}s`,
                 animation: "fadeInUp 0.5s ease-out forwards",

@@ -8,37 +8,38 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-gray-900 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo and Brand */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Image
-              src="/images/SuarezCS_logo.png"
+              src="/images/SuarezCS-logo.png"
               alt="Suarez Cleaning Logo"
-              width={50}
-              height={50}
-              className="w-12 h-12"
+              width={128}
+              height={128}
+              className="w-28 h-36"
+              priority
             />
-            <span className="font-bold text-lg text-gray-900 hidden sm:block">
+            <span className="font-bold text-lg text-stone-400 hidden sm:block">
               Suarez Cleaning Services LLC
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="#services" className="text-gray-700 hover:text-emerald-500 transition-colors">
+            <Link href="#services" className="text-stone-400 hover:text-cyan-500 transition-colors">
               Services
             </Link>
-            <Link href="#why-us" className="text-gray-700 hover:text-emerald-500 transition-colors">
+            <Link href="#why-us" className="text-stone-400 hover:text-cyan-500 transition-colors">
               Why Us
             </Link>
-            <Link href="#areas" className="text-gray-700 hover:text-emerald-500 transition-colors">
+            <Link href="#areas" className="text-stone-400 hover:text-cyan-500 transition-colors">
               Areas
             </Link>
             <Link
               href="/contact"
-              className="bg-emerald-500 text-white px-6 py-2 rounded-lg hover:bg-emerald-600 transition-colors font-medium"
+              className="bg-cyan-700 text-stone-400 px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors font-medium"
             >
               Get a Quote
             </Link>
@@ -47,7 +48,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-gray-700"
+            className="md:hidden p-2 text-stone-400"
             aria-label="Toggle menu"
           >
             <svg
@@ -80,28 +81,28 @@ export default function Header() {
           <nav className="md:hidden pb-4 flex flex-col gap-3">
             <Link
               href="#services"
-              className="text-gray-700 hover:text-emerald-500 transition-colors py-2"
+              className="text-stone-400 hover:text-cyan-500 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href="#why-us"
-              className="text-gray-700 hover:text-emerald-500 transition-colors py-2"
+              className="text-stone-400 hover:text-cyan-500 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Why Us
             </Link>
             <Link
               href="#areas"
-              className="text-gray-700 hover:text-emerald-500 transition-colors py-2"
+              className="text-stone-400 hover:text-cyan-500 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Areas
             </Link>
             <Link
               href="/contact"
-              className="bg-emerald-500 text-white px-6 py-2 rounded-lg hover:bg-emerald-600 transition-colors font-medium text-center"
+              className="bg-cyan-700 text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors font-medium text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               Get a Quote
