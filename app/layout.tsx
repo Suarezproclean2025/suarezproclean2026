@@ -18,7 +18,7 @@ const orangeCountyCities = [
 ]
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://suarezproclean.com'),
+  metadataBase: new URL('https://www.suarezproclean.com'),
   
   title: {
     default: 'Commercial Cleaning Orange County CA | Janitorial Services | Suarez Cleaning',
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://suarezproclean.com',
+    url: 'https://www.suarezproclean.com',
     siteName: 'Suarez Cleaning Services LLC',
     title: 'Commercial Cleaning Orange County CA | #1 Janitorial Services | Suarez Cleaning',
     description: `Premier commercial cleaning & janitorial services serving all Orange County cities: ${orangeCountyCities.slice(0, 10).join(', ')} & more. Licensed, insured & eco-friendly. FREE quotes: (949) 357-9256`,
@@ -166,7 +166,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   
   alternates: {
-    canonical: 'https://suarezproclean.com',
+    canonical: 'https://www.suarezproclean.com',
   },
   
   category: 'Commercial Cleaning Services',
@@ -189,19 +189,19 @@ export default function RootLayout({
       // Primary LocalBusiness Schema
       {
         '@type': ['LocalBusiness', 'ProfessionalService'],
-        '@id': 'https://suarezproclean.com/#organization',
+        '@id': 'https://www.suarezproclean.com/#organization',
         name: 'Suarez Cleaning Services LLC',
         alternateName: ['Suarez Pro Clean', 'Suarez Cleaning', 'Suarez Janitorial'],
         legalName: 'Suarez Cleaning Services LLC',
         description: 'Professional commercial cleaning and janitorial services serving all of Orange County, California. Specializing in office cleaning, nightly janitorial, floor care, and post-construction cleanup.',
         
-        url: 'https://suarezproclean.com',
+        url: 'https://www.suarezproclean.com',
         telephone: '+19493579256',
         email: 'info@suarezproclean.com',
         
         image: {
           '@type': 'ImageObject',
-          url: 'https://suarezproclean.com/images/SuarezCS_logo.png',
+          url: 'https://www.suarezproclean.com/images/SuarezCS_logo.png',
           width: 600,
           height: 900,
           caption: 'Suarez Cleaning Services Logo'
@@ -209,7 +209,7 @@ export default function RootLayout({
         
         logo: {
           '@type': 'ImageObject',
-          url: 'https://suarezproclean.com/images/SuarezCS_logo.png',
+          url: 'https://www.suarezproclean.com/images/SuarezCS_logo.png',
           width: 600,
           height: 900,
         },
@@ -232,15 +232,15 @@ export default function RootLayout({
         areaServed: orangeCountyCities.map(city => ({
           '@type': 'City',
           name: city,
-          '@id': `https://suarezproclean.com/services/${city.toLowerCase().replace(/\s+/g, '-')}`,
+          '@id': `https://www.suarezproclean.com/services/${city.toLowerCase().replace(/\s+/g, '-')}`,
           containedInPlace: {
             '@type': 'AdministrativeArea',
             name: 'Orange County',
-            '@id': 'https://suarezproclean.com/#orange-county',
+            '@id': 'https://www.suarezproclean.com/#orange-county',
             containedInPlace: {
               '@type': 'State',
               name: 'California',
-              '@id': 'https://suarezproclean.com/#california'
+              '@id': 'https://www.suarezproclean.com/#california'
             }
           }
         })),
@@ -287,8 +287,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Commercial Janitorial Services',
                 description: 'Professional nightly and daily janitorial services for offices, buildings, and commercial facilities throughout Orange County',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -297,8 +297,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Office Cleaning Services',
                 description: 'Complete office cleaning and maintenance services including dusting, vacuuming, sanitizing, and trash removal',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -307,8 +307,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Floor Care & Maintenance',
                 description: 'Professional floor stripping, waxing, buffing, polishing, and regular maintenance for all floor types',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -317,8 +317,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Post-Construction Cleaning',
                 description: 'Detailed cleanup and debris removal after construction or renovation projects',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -327,8 +327,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Move In/Out Cleaning',
                 description: 'Thorough deep cleaning services for commercial spaces during tenant transitions',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -337,8 +337,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Day Porter Services',
                 description: 'On-site daytime maintenance and cleaning support for high-traffic commercial facilities',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -347,8 +347,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Medical Office Cleaning',
                 description: 'Specialized sanitization and cleaning for medical facilities, clinics, and healthcare offices',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             },
             {
@@ -357,8 +357,8 @@ export default function RootLayout({
                 '@type': 'Service',
                 name: 'Eco-Friendly Green Cleaning',
                 description: 'Environmentally safe cleaning using eco-friendly products and sustainable practices',
-                provider: { '@id': 'https://suarezproclean.com/#organization' },
-                areaServed: { '@id': 'https://suarezproclean.com/#orange-county' }
+                provider: { '@id': 'https://www.suarezproclean.com/#organization' },
+                areaServed: { '@id': 'https://www.suarezproclean.com/#orange-county' }
               }
             }
           ]
@@ -377,8 +377,8 @@ export default function RootLayout({
       // Website Schema
       {
         '@type': 'WebSite',
-        '@id': 'https://suarezproclean.com/#website',
-        url: 'https://suarezproclean.com',
+        '@id': 'https://www.suarezproclean.com/#website',
+        url: 'https://www.suarezproclean.com',
         name: 'Suarez Cleaning Services LLC - Orange County Commercial Cleaning',
         description: 'Professional commercial cleaning and janitorial services for all of Orange County, California',
         publisher: {
@@ -398,12 +398,12 @@ export default function RootLayout({
       // Service Area Business
       {
         '@type': 'Service',
-        '@id': 'https://suarezproclean.com/#commercial-cleaning-service',
+        '@id': 'https://www.suarezproclean.com/#commercial-cleaning-service',
         serviceType: 'Commercial Cleaning and Janitorial Services',
         name: 'Orange County Commercial Cleaning Services',
         description: 'Comprehensive commercial cleaning and janitorial services for businesses throughout Orange County, California',
         provider: {
-          '@id': 'https://suarezproclean.com/#organization'
+          '@id': 'https://www.suarezproclean.com/#organization'
         },
         areaServed: orangeCountyCities.map(city => ({
           '@type': 'City',
@@ -419,7 +419,7 @@ export default function RootLayout({
         })),
         availableChannel: {
           '@type': 'ServiceChannel',
-          serviceUrl: 'https://suarezproclean.com',
+          serviceUrl: 'https://www.suarezproclean.com',
           servicePhone: {
             '@type': 'ContactPoint',
             telephone: '+19493579256',
@@ -433,13 +433,13 @@ export default function RootLayout({
       // Breadcrumb Schema
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://suarezproclean.com/#breadcrumb',
+        '@id': 'https://www.suarezproclean.com/#breadcrumb',
         itemListElement: [
           {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://suarezproclean.com'
+            item: 'https://www.suarezproclean.com'
           }
         ]
       }
@@ -471,7 +471,7 @@ export default function RootLayout({
         
         {/* Language and content type */}
         <meta httpEquiv="content-language" content="en-US" />
-        <link rel="alternate" hrefLang="en-US" href="https://suarezproclean.com" />
+        <link rel="alternate" hrefLang="en-US" href="https://www.suarezproclean.com" />
       </head>
       <body className={inter.className}>
         {children}

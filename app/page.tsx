@@ -1,8 +1,13 @@
 import Header from '@/app/components/Header'
 import Hero from '@/app/components/Hero'
-import Services from '@/app/components/Services'
+import ServicesOverview from '@/app/components/HomepageSections/ServicesOverview'
 import WhyUs from '@/app/components/WhyUs'
-import Areas from '@/app/components/Areas'
+import IndustriesServed from '@/app/components/HomepageSections/IndustriesServed'
+import CleaningProcess from '@/app/components/HomepageSections/CleaningProcess'
+import ServiceAreas from '@/app/components/HomepageSections/ServiceAreas'
+import FAQ from '@/app/components/HomepageSections/FAQ'
+import Testimonials from '@/app/components/HomepageSections/Testimonials'
+import CTASection from '@/app/components/HomepageSections/CTASection'
 import Footer from '@/app/components/Footer'
 
 export default function Home() {
@@ -11,9 +16,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Services />
+        <ServicesOverview />
         <WhyUs />
-        <Areas />
+        <IndustriesServed />
+        <CleaningProcess />
+        <ServiceAreas />
+        <FAQ />
+        <Testimonials />
+        <CTASection />
       </main>
       <Footer />
     </>

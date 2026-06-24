@@ -6,9 +6,25 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/private/'],
+        disallow: ['/api/', '/_next/', '/private/'],
+      },
+      {
+        userAgent: 'Googlebot',
+        allow: '/',
+        disallow: ['/api/', '/_next/'],
+      },
+      {
+        userAgent: 'Googlebot-Image',
+        allow: '/images/',
+        disallow: ['/api/', '/_next/'],
+      },
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+        disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://suarezproclean.com/sitemap.xml',
+    sitemap: 'https://www.suarezproclean.com/sitemap.xml',
+    host: 'https://www.suarezproclean.com',
   }
 }
